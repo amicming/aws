@@ -5,3 +5,7 @@
 - Engine: Standard
 - Voice: Joanna, Female
 - Upload lexicons XML file 
+
+- aws --region=us-west-2 polly list-lexicons
+- aws --region=us-west-2 polly list-lexicons | grep Name
+- aws --region=us-west-2 polly put-lexicon --name myFirstLexiconPut --content file://polly/myFirstLexiconPut.xml
